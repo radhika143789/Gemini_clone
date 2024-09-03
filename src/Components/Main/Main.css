@@ -38,15 +38,16 @@
     -webkit-text-fill-color: transparent; 
     
     background: linear-gradient(16deg, #4b90ff, #ff5546); 
+    background-clip: text; /* Add the standard property */
 }
 
 .main .card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    padding: 20px; /* Corrected padding */
+    padding: 20px; 
 }
 
-.main .card { /* Removed the typo */
+.main .card { 
     height: 200px;
     padding: 15px;
     background-color: #f0f4f9;
@@ -68,7 +69,7 @@
 .main-bottom {
     position: absolute;
     bottom: 0;
-    width: 100%; /* Changed from 100px */
+    width: 100%; 
     max-width: 900px;
     padding: 0 20px;
     margin: auto;
