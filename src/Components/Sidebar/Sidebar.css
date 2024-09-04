@@ -7,7 +7,7 @@
     padding: 23px 13px;
 }
 
-.sidebar .img {
+.sidebar img {
     width: 20px;
 }
 
@@ -19,7 +19,7 @@
 
 .sidebar .new-chat {
     margin-top: 50px;
-    display: flex; /* Changed to flex for consistent alignment */
+    display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 15px;

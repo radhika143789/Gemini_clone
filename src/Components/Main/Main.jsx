@@ -11,8 +11,8 @@ const Main = () => {
             </div>
             <div className="main-container">
                 <div className="greet">
-                    <p><span>Hello, Dev</span></p> {/* Fixed typo from <spam> to <span> */}
-                    <p>How can I help you today</p> {/* Capitalized "I" */}
+                    <p><span>Hello, Dev</span></p>
+                    <p>How can I help you today</p>
                 </div>
                 <div className="cards">
                     <div className="card">
