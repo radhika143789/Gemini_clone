@@ -58,7 +58,7 @@ const Main = () => {
                             <img onClick={() => onSent} src={assets.send_icon} alt="Send Icon" />
                         </div>
                     </div>
-                    <p className="bottom-info"> {/* Fixed typo from `botton-info` to `bottom-info` */}
+                    <p className="bottom-info"> {}
                         Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps.
                     </p>
                 </div>
