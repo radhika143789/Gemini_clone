@@ -36,7 +36,7 @@ const Main = () => {
                             </div>
                         </div>
                     </>
-                    : <div className='result'>
+                    :<div className='result'>
                         <div className="result-title">
                             <img src={assets.user_icon} alt="" />
                             <p>{recentPrompt}</p>
@@ -44,7 +44,16 @@ const Main = () => {
                         </div>
                         <div className="result-data">
                             <img src={assets.gemini_icon} alt="" />
-                            <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+                            {loading
+                            ?<div className='loader'>
+                                <hr />
+                                <hr />
+                                <hr />
+                                </div>
+                                :<p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+                                
+                            }
+                    
                         </div>
                     </div>
                 }
@@ -55,7 +64,7 @@ const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt="Gallery Icon" />
                             <img src={assets.mic_icon} alt="Mic Icon" />
-                            <img onClick={() => onSent} src={assets.send_icon} alt="Send Icon" />
+                            <img onClick={() => onSent(input)} src={assets.send_icon} alt="Send Icon" />
                         </div>
                     </div>
                     <p className="bottom-info"> {}
