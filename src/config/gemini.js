@@ -12,7 +12,7 @@ import {
 } from '@google/generative-ai';
 
 // Set your API key
-const apiKey = "AIzaSyDvJRMYfKlLpyZv_k3FQtSVZJpXSVwKonA";
+const apiKey = "your_apikey";
 
 // Create a new instance of the GoogleGenerativeAI class
 const genAI = new GoogleGenerativeAI(apiKey);
